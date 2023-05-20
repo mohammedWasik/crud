@@ -19,7 +19,7 @@ const TableStyle = styled(Table)`
 `;
 
 const AllUser = () => {
-  const base_url = "http://localhost:8000";
+  const base_url = "https://crud-lemon-kappa.vercel.app/";
   const [getResult, setGetResult] = useState([]);
 
   const deleteUser = async (id) => {

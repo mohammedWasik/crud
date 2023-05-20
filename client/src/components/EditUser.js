@@ -32,7 +32,7 @@ const EditUser = () => {
     email: "",
     phone: "",
   });
-  const base_url = "http://localhost:8000";
+  const base_url = "https://crud-lemon-kappa.vercel.app/";
 
   const handleFormValue = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
