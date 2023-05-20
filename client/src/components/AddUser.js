@@ -34,7 +34,7 @@ const AddUser = () => {
     email: "",
     phone: "",
   });
-  const base_url = "https://crud-lemon-kappa.vercel.app/";
+  const base_url = "https://crud-lemon-kappa.vercel.app";
 
   const handleFormValue = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
