@@ -50,7 +50,7 @@ const EditUser = () => {
   const getUserDetail = async () => {
     try {
       const response = await axios.get(`${base_url}/${id}`);
-      if (response.statusText === "OK") {
+      if (response.statusText === "OK" || response.status === 200) {
         const result = await response.data;
         setUser(result.data);
       }
