@@ -1,8 +1,5 @@
 import mongoose from "mongoose";
 
-import Inc from "mongoose-sequence";
-const AutoIncrement = Inc(mongoose);
-
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
