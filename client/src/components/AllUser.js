@@ -25,6 +25,8 @@ const AllUser = () => {
   const deleteUser = async (id) => {
     try {
       const response = await axios.delete(`${base_url}/${id}`);
+
+      window.location.reload();
     } catch (error) {
       alert(Object.values(error.response.data));
     }
@@ -34,15 +36,17 @@ const AllUser = () => {
     (async () => {
       try {
         const response = await axios.get(`${base_url}/all`);
-        if (response.statusText === "OK") {
+        console.log(response);
+        if (response.statusText === "OK" || response.status === 200) {
           const result = await response.data;
+          console.log(result);
           setGetResult(result.data);
         }
       } catch (error) {
         alert(Object.values(error.response.data) + ".");
       }
     })();
-  }, [getResult]);
+  }, []);
 
   return (
     <TableStyle>
