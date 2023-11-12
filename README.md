@@ -1,12 +1,12 @@
 # Product Name : [User Manager Dashboard](https://crud-client-psi.vercel.app/all)
 
-#### Product Overview 👀
+### Product Overview 👀
 A simple User Manager Dashboard built using **MERN** stack.
 
-#### Product Objectives 🎯
+### Product Objectives 🎯
 This Project was built to showcase the skills of crud. So it has four elements. Create, Read, Update and Delete. It also has a search feature built-in.
 
-#### Product Features 🧩
+### Product Features 🧩
 ##### Feature/Element 1
 Able to create user with name, user name, email and phone which are then saved in MongoDB.
 ##### Feature/Element 2
